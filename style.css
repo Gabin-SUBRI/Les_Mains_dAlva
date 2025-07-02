@@ -556,11 +556,6 @@ footer {
   }
 
   .about-content,
-  .contact-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
   .gallery-grid {
     grid-template-columns: 1fr;
   }
@@ -568,11 +563,46 @@ footer {
   .services-grid {
     grid-template-columns: 1fr;
   }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Ajustements pour le logo en responsive */
+  .about-image {
+    height: 300px; /* Réduit la hauteur sur mobile */
+    margin-top: 2rem; /* Ajoute un espace au-dessus */
+  }
+
+  #logo {
+    max-height: 90%; /* Laisse un peu plus d'espace sur mobile */
+    max-width: 90%;
+  }
+
+  #logo:hover {
+    transform: scale(1.02); /* Animation plus subtile sur mobile */
+  }
+}
+
+/* Pour les très petits écrans */
+@media (max-width: 480px) {
+  .about-image {
+    height: 250px; /* Encore plus petit sur très petits écrans */
+  }
+
+  #logo {
+    max-height: 85%;
+    max-width: 85%;
+  }
 }
 
 #logo {
-  height: 500px;
+  max-height: 100%;
+  max-width: 100%;
   width: auto;
+  height: auto;
+  object-fit: contain; /* Garde les proportions sans déformation */
   transition: transform 0.3s ease;
 }
 
