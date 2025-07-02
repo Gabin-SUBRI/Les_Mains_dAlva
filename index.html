@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Mains d'Alva - Atelier de Poterie</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">Les Mains d'Alva</a>
+        <ul class="nav-links">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#atelier">L'Atelier</a></li>
+          <li><a href="#creations">Créations</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <h1>Les Mains d'Alva</h1>
+        <p class="subtitle">Atelier de Poterie</p>
+        <p class="description">
+          Dans un univers poétique où la terre rencontre la mer, découvrez des
+          créations uniques façonnées avec passion. Chaque pièce raconte une
+          histoire, chaque forme évoque l'émotion.
+        </p>
+        <a href="#contact" class="cta-button">Découvrir l'Atelier</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="atelier">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>L'Art de la Terre</h2>
+            <p>
+              Bienvenue dans l'univers des Mains d'Alva, où chaque création naît
+              de la rencontre entre la terre ancestrale et l'inspiration
+              maritime. Dans cet atelier baigné de lumière naturelle, je façonne
+              des pièces uniques qui célèbrent la beauté du quotidien.
+            </p>
+            <p>
+              Inspirée par les trésors de l'océan - coquillages, étoiles de mer,
+              galets polis par les vagues - chaque œuvre porte en elle la poésie
+              des éléments naturels. Des bols aux assiettes, des vases aux
+              objets décoratifs, chaque pièce est pensée pour apporter sérénité
+              et beauté à votre intérieur.
+            </p>
+          </div>
+          <div class="about-image">
+            <div>
+              <img src="/img/logo.webp" alt="logo" id="logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="creations">
+      <div class="container">
+        <h2>Mes Créations</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openModal('modal2')">
+            <div class="gallery-placeholder">
+              <img src="/img/assiette.webp" alt="" />
+            </div>
+            <div class="gallery-caption">
+              <h3>Assiette Étoile de Mer</h3>
+              <p>
+                Assiette décorative avec étoile de mer rouge, pièce unique qui
+                apporte une touche marine à votre intérieur.
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery-item" onclick="openModal('modal3')">
+            <div class="gallery-placeholder">
+              <img src="/img/coupelle.webp" alt="" />
+            </div>
+            <div class="gallery-caption">
+              <h3>Coupelles Coquillages</h3>
+              <p>
+                Set de coupelles en forme de coquillages, idéales pour servir
+                amuse-bouches ou fruits de mer.
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery-item" onclick="openModal('modal4')">
+            <div class="gallery-placeholder">
+              <img src="/img/porjet 1.webp" alt="" />
+            </div>
+            <div class="gallery-caption">
+              <h3>Collection Bois Flotté</h3>
+              <p>
+                Compositions poétiques alliant céramique et éléments naturels,
+                créations inspirées des rivages.
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery-item" onclick="openModal('modal5')">
+            <div class="gallery-placeholder">
+              <img src="/img/support_bijoux.webp" alt="" />
+            </div>
+            <div class="gallery-caption">
+              <h3>Vase Ondulation</h3>
+              <p>
+                Vase aux formes fluides évoquant les vagues, parfait pour mettre
+                en valeur vos fleurs séchées.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modals pour agrandir les images -->
+
+        <div id="modal2" class="modal" onclick="closeModal('modal2')">
+          <span class="close">&times;</span>
+          <div class="modal-content-wrapper">
+            <div
+              class="gallery-placeholder"
+              style="
+                height: 400px;
+                width: 400px;
+                font-size: 4rem;
+                border-radius: 10px;
+              "
+            ></div>
+            <div class="modal-caption">
+              <img src="/img/assiette.webp" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div id="modal3" class="modal" onclick="closeModal('modal3')">
+          <span class="close">&times;</span>
+          <div class="modal-content-wrapper">
+            <div
+              class="gallery-placeholder"
+              style="
+                height: 400px;
+                width: 400px;
+                font-size: 4rem;
+                border-radius: 10px;
+              "
+            ></div>
+            <div class="modal-caption">
+              <img src="/img/coupelle.webp" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div id="modal4" class="modal" onclick="closeModal('modal4')">
+          <span class="close">&times;</span>
+          <div class="modal-content-wrapper">
+            <div
+              class="gallery-placeholder"
+              style="
+                height: 400px;
+                width: 400px;
+                font-size: 4rem;
+                border-radius: 10px;
+              "
+            ></div>
+            <div class="modal-caption">
+              <img src="/img/porjet 1.webp" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div id="modal5" class="modal" onclick="closeModal('modal5')">
+          <span class="close">&times;</span>
+          <div class="modal-content-wrapper">
+            <div
+              class="gallery-placeholder"
+              style="
+                height: 400px;
+                width: 400px;
+                font-size: 4rem;
+                border-radius: 10px;
+              "
+            ></div>
+            <div class="modal-caption">
+              <img src="/img/support_bijoux.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2>Mes Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>Ateliers Découverte</h3>
+            <p>
+              Initiez-vous à l'art de la poterie dans une ambiance conviviale.
+              Découvrez les gestes ancestraux et créez votre première pièce.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🛍️</div>
+            <h3>Créations Sur Mesure</h3>
+            <p>
+              Réalisez vos projets personnalisés. De la pièce unique au service
+              complet, donnons vie à vos envies.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🎁</div>
+            <h3>Boutique Artisanale</h3>
+            <p>
+              Découvrez ma collection permanente de pièces uniques, parfaites
+              pour offrir ou se faire plaisir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contactez-moi</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>📍 Atelier Les Mains d'Alva</h3>
+            <p>📧 contact@lesmainsdalva.fr</p>
+            <p>📱 +33 (0)6 XX XX XX XX</p>
+            <p>🕐 Ouvert sur rendez-vous</p>
+            <p>Mardi - Samedi : 10h - 18h</p>
+            <br />
+            <h3>🌊 Suivez-moi</h3>
+            <p>
+              Découvrez mes dernières créations et l'actualité de l'atelier sur
+              Instagram @lesmainsdalva
+            </p>
+          </div>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Nom *</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                required
+                placeholder="Parlez-moi de votre projet, vos envies, ou posez-moi vos questions..."
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a href="https://www.instagram.com/lesmainsdalva/" target="_blank"
+            >📸</a
+          >
+          <a href="mailto:contact@lesmainsdalva.fr">📧</a>
+        </div>
+        <p>
+          &copy; 2025 Les Mains d'Alva - Atelier de Poterie. Tous droits
+          réservés.
+        </p>
+        <p>Créé avec passion • Façonné à la main • Inspiré par la nature</p>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
